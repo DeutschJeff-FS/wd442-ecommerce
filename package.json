@@ -1,0 +1,25 @@
+{
+  "name": "wd442-ecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeutschJeff-FS/wd442-ecommerce.git"
+  },
+  "keywords": [],
+  "author": "Jeff Deutsch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeutschJeff-FS/wd442-ecommerce/issues"
+  },
+  "homepage": "https://github.com/DeutschJeff-FS/wd442-ecommerce#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}

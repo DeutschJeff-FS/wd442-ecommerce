@@ -10,7 +10,7 @@ router.get("/:id/edit", productCtrl.form);
 
 router.post("/", productCtrl.create);
 router.post("/:id", productCtrl.update);
-router.post("/:id/delete", productCtrl.remove);
+router.all("/:id/delete", productCtrl.remove);
 
 router.delete("/:id", productCtrl.remove);
 

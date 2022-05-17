@@ -1,6 +1,6 @@
 let products = [
-  { id: "1", slug: "nike-shoe", name: "Nike Shoe" },
-  { id: "2", slug: "adidas-shoe", name: "Adidas Shoe" },
+  { id: "1", slug: "nike-shoe", name: "Nike Shoe", price: 14.99 },
+  { id: "2", slug: "adidas-shoe", name: "Adidas Shoe", price: 16.99 },
 ];
 
 const all = () => {

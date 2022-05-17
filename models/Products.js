@@ -1,4 +1,7 @@
-let products = [{ id: "1", slug: "nike-shoe", name: "Nike Shoe" }];
+let products = [
+  { id: "1", slug: "nike-shoe", name: "Nike Shoe" },
+  { id: "2", slug: "adidas-shoe", name: "Adidas Shoe" },
+];
 
 const all = () => {
   return products;
@@ -9,8 +12,9 @@ const find = (id) => {
 };
 
 const create = (product) => {
-  products.push(product);
-  return products;
+  const id = Number(products[products.length - 1].id) + 1 + "";
+  products.push({ id, ...product });
+  return products[products.length - 1];
 };
 
 const update = (id, product) => {

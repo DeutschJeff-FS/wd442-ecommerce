@@ -4,10 +4,11 @@
     <h2>About {{variant.title}}</h2>
     <ul style="list-style: none;">
         <li>
-        {#Change to productId#}
             <label>ID: </label> {{variant.id}}
         </li>
-        {#Add slug link and label here#}
+        <li>
+            <label>URL Slug:</label> {{variant.slug}}
+        </li>
         <li>
             <label>Title: </label> {{variant.title}}
         </li>
@@ -17,7 +18,13 @@
         <li>
             <label>Product: </label> {{product.title}}
         </li>
-        {#Add description and inventory links and labels here#}
+        <li>
+            <label>Available Inventory:</label> {{variant.inventory}}
+        </li>
+        <li>
+            <label>Description:</label>
+            {{variant.description}}
+        </li>
     </ul>
     <p>
         <a href="/variants/{{variant.id}}/edit">Edit</a> | <a href="/variants/{{variant.id}}/delete">Delete</a>

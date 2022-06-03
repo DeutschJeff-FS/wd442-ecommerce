@@ -5,11 +5,11 @@
 {% block main_content %}
     <main>
         <h2 class="storefront">Tea Shop</h2>
-        <div>
+        <div class="shop-container">
             {% for product in products %}
-                <div>
-                    <a href="../storefront/products/{{product.slug}}">
-                        {% for vairnat in product.Variants %}
+                <div class="img-containter">
+                    <a class="image-link" href="../storefront/products/{{product.slug}}">
+                        {% for variant in product.Variants %}
                             {% for image in variant.Images %}
                                 <img src="/public/images/{{image.id}}{{image.extension}}" alt="Tea" />
                             {% endfor %}

@@ -1,0 +1,26 @@
+{% extends "../../layouts/base.twig" %}
+
+{% block stylesheets %}{{ parent() }}{% endblock %}
+
+{% block main_content %}
+    <main>
+        <h2 class="storefront">Tea Shop</h2>
+        <div>
+            {% for product in products %}
+                <div>
+                    <a href="../storefront/products/{{product.slug}}">
+                        {% for vairnat in product.Variants %}
+                            {% for image in variant.Images %}
+                                <img src="/public/images/{{image.id}}{{image.extension}}" alt="Tea" />
+                            {% endfor %}
+                        {% endfor %}
+                    </a>
+                </div>
+                <div>
+                    <h4><a href="#">{{product.title}}</a></h4>
+                    <h6>${{product.price}}</h6>
+                </div>
+            {% endfor %}
+        </div>
+    </main>
+{% endblock %}
